@@ -143,4 +143,35 @@
     font-size: 1rem;
     color: #4b5563;
   }
+
+  @media (max-width: 600px) {
+    /* Inputs empilhados */
+    form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    #add-task-button {
+      width: 100%;
+    }
+  
+    /* Dentro da tarefa, quebrar linha */
+    .header-row {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.25rem;
+    }
+  
+    .complete-btn {
+      align-self: stretch;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .done-icon {
+      right: 1rem;
+      bottom: 1rem;
+    }
+  }
+  
   

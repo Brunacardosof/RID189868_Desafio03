@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Board de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="./index.js"></script>
+</head>
+<body>
+  <main>
+    <h1>Board de tarefas</h1>
+
+    <!-- Formulário de nova tarefa -->
+    <section id="create-task-section">
+      <form id="create-task-form">
+        <input 
+          type="text" 
+          name="taskName" 
+          id="task-name" 
+          placeholder="Nome da tarefa" 
+          required 
+        />
+        <input 
+          type="text" 
+          name="tag" 
+          id="task-tag" 
+          placeholder="Etiqueta" 
+          required 
+        />
+        <button type="submit" id="add-task-button">+</button>
+      </form>
+    </section>
+
+    <!-- Lista de tarefas -->
+    <section id="task-list-section">
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- Rodapé vazio que será preenchido pelo JS -->
+    <footer id="task-footer"></footer>
+  </main>
+</body>
+</html>
